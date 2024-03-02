@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100px;
+  padding: 10px;
+}
+.container input,
+.checkboxes {
+  width: 20px;
+  height: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.input,
+.btn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid red;
+}
+.btn {
+  outline: none;
+  border: 2px solid purple;
+  margin: 0 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+.flexs {
+  display: flex;
+  align-items: center;
+  background-color: rgb(53, 11, 11);
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  width: 40vw;
+}
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: aqua;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.expense-header {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+}
+.expense-header input {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: 2px solid purple;
+}
+.expense-header button {
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+  padding: 15px 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+table {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+thead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+td {
+  width: 10vw;
+}
