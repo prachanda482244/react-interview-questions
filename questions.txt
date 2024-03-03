@@ -1,0 +1,10 @@
+What are the differences between HTML4 and HTML5?
+Explain the differences between <div> and <span> elements.
+What is the purpose of the data- attribute in HTML5?
+Explain the difference between <script>, <script async>, and <script defer> in HTML.
+What are semantic elements in HTML5, and why are they important?
+What is the purpose of the alt attribute in the <img> element?
+Explain the differences between HTTP GET and POST methods.
+What is the purpose of the <iframe> element, and what are some considerations when using it?
+Explain the concept of responsive web design and how it's implemented in HTML.
+What is the purpose of the <meta> tag in HTML, and what are some common attributes used with it?
