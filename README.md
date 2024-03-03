@@ -16,8 +16,6 @@ Feel free to contribute by adding more questions or improving existing ones. Let
 
 # Advanced HTML Interview Questions
 
-This README file contains a list of advanced HTML interview questions along with their answers.
-
 ## Question 1: What are the differences between HTML4 and HTML5?
 
 **Answer:**
