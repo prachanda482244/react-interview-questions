@@ -1,3 +1,19 @@
+# Welcome to My Tech Interview Preparation Repository
+
+This repository contains a comprehensive collection of interview questions for various technologies including HTML, CSS, JavaScript, React, TypeScript, Express, and Node.js. We aim to provide over 1000 questions to help you prepare thoroughly for your technical interviews.
+
+## Table of Contents
+
+| Tech(Language) | No. of Questions |
+| -------------- | ---------------- |
+| HTML           | 10               |
+
+## Description
+
+This repository is dedicated to providing a comprehensive collection of interview questions for various web development technologies. Whether you're preparing for interviews or simply looking to enhance your knowledge in HTML, CSS, JavaScript, React, TypeScript, Express, or Node.js, you'll find a wide range of questions and answers to help you in your journey.
+
+Feel free to contribute by adding more questions or improving existing ones. Let's collaborate to build a valuable resource for the developer community!
+
 # Advanced HTML Interview Questions
 
 This README file contains a list of advanced HTML interview questions along with their answers.
