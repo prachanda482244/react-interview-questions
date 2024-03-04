@@ -6,7 +6,7 @@ This repository contains a comprehensive collection of interview questions for v
 
 | Tech(Language) | No. of Questions |
 | -------------- | ---------------- |
-| HTML           | 10               |
+| HTML           | 20               |
 
 ## Description
 
@@ -70,6 +70,59 @@ Responsive web design is an approach to design and development that ensures a we
 
 **Answer:**
 The `<meta>` tag is used to provide metadata about the HTML document, such as character encoding, viewport settings, author information, and keywords. Common attributes include `charset`, `name`, `content`, `http-equiv`, `viewport`, `description`, `author`, `keywords`, etc.
+
+## Question 11: What is the purpose of the `<!DOCTYPE>` declaration in HTML?
+
+**Answer:**
+The `<!DOCTYPE>` declaration specifies the document type and version of HTML being used. It helps browsers to render the web page correctly by switching to the appropriate rendering mode. For example, `<!DOCTYPE html>` declares the document as an HTML5 document.
+
+## Question 12: Explain the difference between HTML entities and HTML character codes.
+
+**Answer:**
+HTML entities are symbolic representations of characters, such as `&lt;` for `<` and `&gt;` for `>`. HTML character codes are numeric representations of characters, such as `&#60;` for `<` and `&#62;` for `>`. Both entities and codes can be used to display special characters in HTML.
+
+## Question 13: What are the new input types introduced in HTML5 for form validation?
+
+**Answer:**
+HTML5 introduced new input types such as `email`, `url`, `tel`, `number`, `date`, `time`, `datetime`, `month`, `week`, `color`, etc., which provide built-in form validation features in modern browsers.
+
+## Question 14: How can you embed audio and video content in HTML5 without using `<audio>` and `<video>` elements?
+
+**Answer:**
+You can embed audio and video content in HTML5 using the `<object>` element or the `<embed>` element. However, it's recommended to use the `<audio>` and `<video>` elements for better compatibility and accessibility.
+
+## Question 15: What is the purpose of the `<figure>` and `<figcaption>` elements in HTML5?
+
+**Answer:**
+The `<figure>` element is used to encapsulate self-contained content, such as images, illustrations, diagrams, etc. The `<figcaption>` element is used to provide a caption or description for the content within the `<figure>` element.
+
+## Question 16: How can you create a hyperlink that opens an email client with a pre-filled email address in HTML?
+
+**Answer:**
+You can create a mailto link using the `mailto:` protocol followed by the email address. For example, `<a href="mailto:example@example.com">Send Email</a>` will open the default email client with the recipient's email address pre-filled.
+
+## Question 17: Explain the differences between the `<strong>` and `<b>` elements, and the `<em>` and `<i>` elements in HTML.
+
+**Answer:**
+`<strong>` and `<b>` are used to emphasize text, but `<strong>` indicates stronger importance, typically displayed in bold, while `<b>` is just for stylistic purposes. Similarly, `<em>` and `<i>` are used to italicize text, but `<em>` indicates emphasis, typically displayed in italics, while `<i>` is for stylistic purposes.
+
+## Question 18: What is the purpose of the `aria-` attributes in HTML, and how are they used for accessibility?
+
+**Answer:**
+The `aria-` attributes are used to enhance the accessibility of HTML elements for assistive technologies, such as screen readers. They provide additional information about the role, state, and properties of elements that may not be conveyed through the HTML structure alone.
+
+## Question 19: How can you create a placeholder text for an input field in HTML5?
+
+**Answer:**
+You can use the `placeholder` attribute to create placeholder text for an input field. For example, `<input type="text" placeholder="Enter your name">` will display "Enter your name" as a placeholder text in the input field.
+
+## Question 20: Explain the difference between the `<input type="button">`, `<input type="submit">`, and `<button>` elements in HTML.
+
+**Answer:**
+
+- `<input type="button">`: It creates a clickable button without any default behavior. You need to use JavaScript to define the button's action.
+- `<input type="submit">`: It creates a button that submits the form when clicked.
+- `<button>`: It creates a clickable button that can have both text and HTML content, and you can define its behavior using JavaScript.
 
 ---
 

@@ -8,3 +8,13 @@ Explain the differences between HTTP GET and POST methods.
 What is the purpose of the <iframe> element, and what are some considerations when using it?
 Explain the concept of responsive web design and how it's implemented in HTML.
 What is the purpose of the <meta> tag in HTML, and what are some common attributes used with it?
+What is the purpose of the <DOCTYPE> declaration in HTML?
+Explain the difference between HTML entities and HTML character codes.
+What are the new input types introduced in HTML5 for form validation?
+How can you embed audio and video content in HTML5 without using <audio> and <video> elements?
+What is the purpose of the <figure> and <figcaption> elements in HTML5?
+How can you create a hyperlink that opens an email client with a pre-filled email address in HTML?
+Explain the differences between the <strong> and <b> elements, and the <em> and <i> elements in HTML.
+What is the purpose of the aria- attributes in HTML, and how are they used for accessibility?
+How can you create a placeholder text for an input field in HTML5?
+Explain the difference between the <input type="button">, <input type="submit">, and <button> elements in HTML.
