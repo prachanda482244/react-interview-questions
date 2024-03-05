@@ -6,7 +6,7 @@ This repository contains a comprehensive collection of interview questions for v
 
 | Tech(Language) | No. of Questions |
 | -------------- | ---------------- |
-| HTML           | 20               |
+| HTML           | 30               |
 
 ## Description
 
@@ -42,7 +42,7 @@ The `data-` attribute allows developers to store custom data attributes directly
 ## Question 5: What are semantic elements in HTML5, and why are they important?
 
 **Answer:**
-Semantic elements in HTML5 are elements that carry meaning. They describe the content they contain, making it more understandable both for developers and assistive technologies like screen readers. Examples include `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`, etc.
+Semantic elements in HTML5 are elements that carry meaning. They describe the content they contain, making it more understandable both for developers and assistive technologies like screen readers. Examples include `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`, and it is mainly use for SEO (Search Engine Optimizaion)
 
 ## Question 6: What is the purpose of the `alt` attribute in the `<img>` element?
 
@@ -123,6 +123,59 @@ You can use the `placeholder` attribute to create placeholder text for an input 
 - `<input type="button">`: It creates a clickable button without any default behavior. You need to use JavaScript to define the button's action.
 - `<input type="submit">`: It creates a button that submits the form when clicked.
 - `<button>`: It creates a clickable button that can have both text and HTML content, and you can define its behavior using JavaScript.
+
+## Question 21: What is the purpose of the `contenteditable` attribute in HTML?
+
+**Answer:**
+The `contenteditable` attribute is used to make an element editable by the user. When set to `true`, the content of the element can be edited directly by the user. This attribute is commonly used to create rich text editors or make specific sections of a webpage editable.
+
+## Question 22: Explain the difference between the `<script>` tag placement: at the top, at the bottom, and using the `async` attribute.
+
+**Answer:**
+
+- Placing `<script>` tags at the top of the HTML document may block the rendering of the page content until the script is fully loaded and executed.
+- Placing `<script>` tags at the bottom of the HTML document allows the page content to render first, improving perceived performance, but may delay script execution.
+- Using the `async` attribute with the `<script>` tag allows the script to be downloaded asynchronously while parsing the HTML document. This can improve page load time and doesn't block rendering, but the order of execution may not be guaranteed.
+
+## Question 23: What is the purpose of the `<details>` and `<summary>` elements in HTML?
+
+**Answer:**
+The `<details>` element is used to create a disclosure widget, which allows users to toggle the visibility of additional content. The content that can be toggled is enclosed within the `<details>` element. The `<summary>` element is used to provide a visible heading or summary for the content enclosed within the `<details>` element.
+
+## Question 24: How can you create a tooltip in HTML without using JavaScript?
+
+**Answer:**
+You can create a tooltip using the `title` attribute. When the user hovers over an element with the `title` attribute, the browser will display the tooltip with the content of the `title` attribute. For example, `<a href="#" title="This is a tooltip">Hover me</a>` will display "This is a tooltip" when hovered.
+
+## Question 25: What is the purpose of the `scoped` attribute in the `<style>` tag?
+
+**Answer:**
+The `scoped` attribute in the `<style>` tag is used to apply styles only to the elements within the same parent element as the `<style>` tag. This allows for more localized styling, reducing the risk of style conflicts with other parts of the document.
+
+## Question 26: How can you create a responsive image in HTML?
+
+**Answer:**
+You can create a responsive image by setting the `width` property to `100%` and the `height` property to `auto`. This ensures that the image scales proportionally to fit its container while maintaining its aspect ratio, making it responsive to different screen sizes.
+
+## Question 27: What is the purpose of the `hidden` attribute in HTML?
+
+**Answer:**
+The `hidden` attribute is used to hide an element from being displayed in the browser. When applied to an element, it removes the element from the rendering flow, effectively hiding it from view. This attribute can be toggled dynamically using JavaScript to show or hide elements as needed.
+
+## Question 28: How can you embed SVG (Scalable Vector Graphics) in HTML?
+
+**Answer:**
+You can embed SVG in HTML using the `<svg>` element directly in the HTML document. Alternatively, you can use the `<img>` element with the `src` attribute pointing to an SVG file, or use inline SVG by including SVG markup within an HTML document.
+
+## Question 29: What are the benefits of using semantic HTML elements?
+
+**Answer:**
+Semantic HTML elements provide meaning to the structure of a web page, making it more accessible to both users and search engines. They improve code readability and maintainability, enhance search engine optimization (SEO), and help assistive technologies better understand the content and context of the page.
+
+## Question 30: How can you create custom data attributes in HTML?
+
+**Answer:**
+Custom data attributes can be created by prefixing attribute names with `data-`. For example, `<div data-custom="value">` creates a custom data attribute named `data-custom` with the value `value`. Custom data attributes are commonly used to store extra information that is not suitable for other attributes or elements.
 
 ---
 

@@ -18,3 +18,13 @@ Explain the differences between the <strong> and <b> elements, and the <em> and 
 What is the purpose of the aria- attributes in HTML, and how are they used for accessibility?
 How can you create a placeholder text for an input field in HTML5?
 Explain the difference between the <input type="button">, <input type="submit">, and <button> elements in HTML.
+What is the purpose of the contenteditable attribute in HTML?
+Explain the difference between the <script> tag placement: at the top, at the bottom, and using the async attribute.
+What is the purpose of the <details> and <summary> elements in HTML?
+How can you create a tooltip in HTML without using JavaScript?
+What is the purpose of the scoped attribute in the <style> tag?
+How can you create a responsive image in HTML?
+What is the purpose of the hidden attribute in HTML?
+How can you embed SVG (Scalable Vector Graphics) in HTML?
+What are the benefits of using semantic HTML elements?
+How can you create custom data attributes in HTML?
