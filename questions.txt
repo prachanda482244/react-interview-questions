@@ -28,3 +28,25 @@ What is the purpose of the hidden attribute in HTML?
 How can you embed SVG (Scalable Vector Graphics) in HTML?
 What are the benefits of using semantic HTML elements?
 How can you create custom data attributes in HTML?
+
+30. What is the purpose of the `z-index` property in CSS?
+31. What is the CSS box model and how does it work?
+32. Explain the difference between `inline`, `block`, `inline-block`, and `flex` display properties.
+33. How can you vertically center an element using CSS?
+34. What is the CSS specificity and how is it calculated?
+35. Explain the difference between `margin` and `padding`.
+36. What are pseudo-elements in CSS and how are they used?
+37. Explain the difference between `position: static`, `position: relative`, `position: absolute`, and `position: fixed`.
+38. What is the purpose of the `z-index` property in CSS?
+39. How can you create CSS animations and transitions?
+40. Explain the difference between `em`, `rem`, `px`, `%`, `vh`, and `vw` units in CSS.
+41. What is the purpose of the `@media` rule in CSS?
+42. How can you implement
+43. What is the CSS specificity and how does it work?
+44. What is the difference between `display: none` and `visibility: hidden`?
+45. Explain the difference between absolute and relative positioning in CSS.
+46. How can you create a CSS animation?
+47. What is the purpose of the `z-index` property in CSS?
+48. What is the CSS specificity and how does it work?
+49. What is the difference between `display: none` and `visibility: hidden`?
+50. Explain the difference between absolute and relative positioning in CSS.

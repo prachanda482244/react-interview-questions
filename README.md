@@ -7,6 +7,7 @@ This repository contains a comprehensive collection of interview questions for v
 | Tech(Language) | No. of Questions |
 | -------------- | ---------------- |
 | HTML           | 30               |
+| CSS            | 20               |
 
 ## Description
 
@@ -177,6 +178,155 @@ Semantic HTML elements provide meaning to the structure of a web page, making it
 **Answer:**
 Custom data attributes can be created by prefixing attribute names with `data-`. For example, `<div data-custom="value">` creates a custom data attribute named `data-custom` with the value `value`. Custom data attributes are commonly used to store extra information that is not suitable for other attributes or elements.
 
+- [Advanced CSS Interview Questions](#advanced-css-interview-questions)
+
+### Question 31: What is the CSS Box Model?
+
+**Answer:**
+The CSS Box Model describes the layout of elements in HTML. It consists of the content area, padding, border, and margin. The content area contains the actual content of the element, surrounded by padding, border, and margin, which provide spacing and styling options.
+
+### Question 32: Explain the difference between `display: block`, `display: inline`, and `display: inline-block`.
+
+**Answer:**
+
+- `display: block`: Renders the element as a block-level element, taking up the full width available and starting on a new line.
+- `display: inline`: Renders the element as an inline-level element, allowing other elements to appear on the same line.
+- `display: inline-block`: Renders the element as an inline-level element, but retains block-like features such as the ability to set width, height, padding, and margin.
+
+### Question 33: What is the difference between `position: relative`, `position: absolute`, `position: fixed`, and `position: sticky`?
+
+**Answer:**
+
+- `position: relative`: Positions the element relative to its normal position in the document flow.
+- `position: absolute`: Positions the element relative to its nearest positioned ancestor or the initial containing block.
+- `position: fixed`: Positions the element relative to the viewport, meaning it stays in the same position even when the page is scrolled.
+- `position: sticky`: Positions the element based on the user's scroll position. It acts like `relative` positioning until the element reaches a specified point and then becomes `fixed`.
+
+### Question 34: How do you vertically center an element in CSS?
+
+**Answer:**
+There are several methods to vertically center an element in CSS, including using `flexbox`, `grid`, or `position` properties like `absolute` and `transform`.
+
+### Question 35: What is the CSS specificity and how does it work?
+
+**Answer:**
+CSS specificity is a measure of how specific a selector is in targeting elements. It determines which styles take precedence when multiple conflicting styles are applied to the same element. Specificity is calculated based on the type of selector, ID selectors being the most specific, followed by class selectors, attribute selectors, and finally, type selectors.
+
+### Question 36: What are CSS pseudo-elements and pseudo-classes?
+
+**Answer:**
+CSS pseudo-elements are used to style specific parts of an element, such as the first line or first letter of text, using selectors like `::first-line` and `::first-letter`. Pseudo-classes are used to style elements in specific states, such as `:hover` for mouse hover, `:focus` for focus, and `:active` for active states.
+
+### Question 37: Explain the difference between `margin` and `padding`.
+
+**Answer:**
+
+- `margin`: Provides space outside an element's border, creating space between the element and surrounding elements.
+- `padding`: Provides space inside an element's border, creating space between the element's content and its border.
+
+### Question 38: What is the CSS `z-index` property used for?
+
+**Answer:**
+The `z-index` property specifies the stacking order of positioned elements along the z-axis (perpendicular to the screen). Elements with a higher `z-index` value appear on top of elements with a lower `z-index` value. This property only works on positioned elements (`position: absolute`, `position: relative`, `position: fixed`, or `position: sticky`).
+
+### Question 39: How can you create CSS animations and transitions?
+
+**Answer:**
+CSS animations are created using the `@keyframes` rule, defining the animation's keyframes and properties over specific intervals. CSS transitions are created using the `transition` property, specifying the property to animate, duration, timing function, and delay.
+
+### Question 40: What are CSS preprocessors and what are their advantages?
+
+**Answer:**
+CSS preprocessors like Sass, LESS, and Stylus extend the capabilities of CSS by introducing features like variables, mixins, functions, and nested rules. They help improve code organization, maintainability, and reusability, allowing for more efficient CSS development.
+
+### Question 40: What is the CSS Box Model and how does it work?
+
+**Answer:**
+The CSS Box Model is a fundamental concept that describes the design and layout of elements on a web page. It consists of four main components: content, padding, border, and margin. When you apply styles to an element, such as setting its width, height, padding, border, or margin, these properties are calculated based on the box model.
+
+### Question 41: What are CSS preprocessors, and why are they used?
+
+**Answer:**
+CSS preprocessors are tools that extend the functionality of CSS by introducing features like variables, nesting, mixins, inheritance, and more. Popular CSS preprocessors include Sass, LESS, and Stylus. They help improve code organization, maintainability, and reusability by allowing developers to write cleaner and more concise CSS code.
+
+### Question 42: Explain the difference between `em` and `rem` units in CSS.
+
+**Answer:**
+
+- `em` unit: Represents the font size of the element relative to its parent element's font size. If applied to other properties like width or height, it's relative to the font size of the element itself.
+- `rem` unit: Represents the font size of the root element (`html`). It ensures consistent sizing across the entire document, as it's not affected by the font size of parent elements.
+
+### Question 43: What is the difference between `:nth-child()` and `:nth-of-type()` selectors in CSS?
+
+**Answer:**
+
+- `:nth-child()`: Selects elements based on their position relative to their parent container, regardless of their type.
+- `:nth-of-type()`: Selects elements based on their position relative to their parent container, considering only elements of the same type.
+
+### Question 44: How can you vertically center an element in CSS?
+
+**Answer:**
+There are several methods to vertically center an element:
+
+1. Using Flexbox: Apply `display: flex` to the parent container and use `align-items: center`.
+2. Using Grid: Apply `display: grid` to the parent container and use `align-items: center`.
+3. Using `position` and `transform`: Apply `position: absolute` to the element and use `top: 50%` and `transform: translateY(-50%)`.
+4. Using table-cell: Apply `display: table-cell` to the parent container and use `vertical-align: middle`.
+
+### Question 45: What are CSS variables (Custom Properties), and how do you use them?
+
+**Answer:**
+CSS variables, also known as Custom Properties, allow you to define reusable values that can be used throughout your CSS code. They are declared using the `--` prefix and accessed using the `var()` function. For example:
+
+````css
+:root {
+  --primary-color: #007bff;
+}
+
+.element {
+  color: var(--primary-color);
+}
+
+### Question 46: What is the CSS specificity and how does it work?
+
+**Answer:**
+CSS specificity determines which CSS rule takes precedence when multiple rules target the same element. Specificity is calculated based on the number of selectors, type of selectors, and order of specificity. Inline styles have the highest specificity, followed by IDs, classes, and elements.
+
+### Question 47: What is the difference between `display: none` and `visibility: hidden`?
+
+**Answer:**
+- `display: none`: Completely removes the element from the document flow, making it invisible and not taking up any space.
+- `visibility: hidden`: Hides the element while still occupying space in the document flow. The element is not visible, but its space is preserved.
+
+### Question 48: Explain the difference between absolute and relative positioning in CSS.
+
+**Answer:**
+- Absolute positioning: Positions the element relative to its nearest positioned ancestor. If no ancestor is positioned, it is placed relative to the initial containing block.
+- Relative positioning: Positions the element relative to its normal position in the document flow, while still occupying space in the document flow. Other elements are positioned as if the element were in its normal position.
+
+### Question 49: How can you create a CSS animation?
+
+**Answer:**
+CSS animations allow you to animate CSS properties over time. You can define animations using `@keyframes` rule and apply them to elements using the `animation` property. For example:
+```css
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.element {
+  animation: slide-in 1s forwards;
+}
+### Question 50: What is the purpose of the `z-index` property in CSS?
+
+**Answer:**
+The `z-index` property specifies the stacking order of positioned elements along the z-axis (depth) of the stacking context. Elements with a higher `z-index` value will be displayed in front of elements with a lower `z-index` value.
+
 ---
 
 This README provides insights into various advanced HTML concepts and can be used as a reference for interview preparation or self-study.
+````
