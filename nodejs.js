@@ -137,3 +137,72 @@ log(newObj.greet())
 //     }
 // }
 // log(a())
+
+// LEXICAL SCOPE AND CLOSURE
+console.clear()
+let name = "Something"
+
+function outer() {
+    log(name)
+    let anotherName = "Something2"
+
+    function inner() {
+        log(name)
+        log(anotherName)
+    }
+    inner()
+}
+// outer()
+
+let closureName = "hello"
+
+function closureOuter() {
+    log(closureName)
+
+    function innerClosure() {
+        log(closureName)
+    }
+    return innerClosure
+}
+// const fn = closureOuter() // return the whole inner function
+// log("fn:", fn())
+
+function sum() {
+    const obj = {}
+    return (a, b) => {
+        if (!obj[`${a},${b}`]) {
+            log("inside if")
+            obj[`${a},${b}`] = a + b
+            log(obj[`${a},${b}`], 'key')
+        }
+        return obj[`${a},${b}`]
+
+    }
+}
+const closureSum = sum()
+log(closureSum(1, 2)) // Only this will go to the if block rest of the code will be optimized because of the closure
+log(closureSum(1, 2))
+log(closureSum(220, 2))
+
+// Dynamic key
+let o = {}
+let keys = 'name'
+let anotherKey = 'classs'
+o[keys] = 'lkey'
+o[anotherKey] = '10'
+log(o)
+log(o[keys])
+
+function outerFunction(outerVariable) {
+    console.log(`Outer variable: ${outerVariable}`);
+
+    // This inner function is anonymous
+    return function(innerVariable) {
+        console.log(`Outer variable: ${outerVariable}`);
+        console.log(`Inner variable: ${innerVariable}`);
+    };
+}
+
+const innerFunc = outerFunction('outerValue') // when you call the outerFunction then it will invoked but the that anonymous function inside will be pass to the variable innerFunc so when you execute that then the return function value will print
+log(innerFunc)
+    // innerFunc('innerValue');
