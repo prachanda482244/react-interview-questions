@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const ExpenseTracker = () => {
       const [expensesList, setExpensesList] = useState([])
+      const [error, setError] = useState(false)
+      const [errorMessage, setErrorMessage] = useState('')
       const [total, setTotal] = useState(0)
       const [expenses, setExpenses] = useState({
             expenseName: '',
@@ -19,8 +21,16 @@ const ExpenseTracker = () => {
             console.log(id, value)
       }
       const handleClick = () => {
-            (expenses.expenseAmount === '' || expenses.expenseName === '') ? alert('All field Required')
-                  : setExpensesList([...expensesList, expenses])
+            if (expenses.expenseAmount === '' || expenses.expenseName === '') {
+                  setError(true)
+                  setErrorMessage("All field Required")
+            }
+            else {
+                  setExpensesList([...expensesList, expenses])
+                  setError(false)
+                  setErrorMessage("Items Added Successfullly")
+
+            }
             setExpenses({ expenseName: '', expenseAmount: '' })
             setTotal(total + +expenses.expenseAmount)
       }
@@ -28,9 +38,21 @@ const ExpenseTracker = () => {
             setExpensesList(expensesList.filter(item => item.userId !== id))
             setTotal(total - amount)
       }
+      useEffect(() => {
+            const timer = setTimeout(() => {
+                  setErrorMessage('')
+            }, 2000);
+
+            return () => {
+                  clearTimeout(timer)
+            }
+      }, [errorMessage])
       return (
             <div className="expense-container">
                   <h1 className="text-center">Expense trackeer</h1>
+                  <div style={{ height: '20px', width: '50%', textAlign: 'center', color: error ? 'red' : 'green', fontWeight: 'bold' }}>
+                        {errorMessage}
+                  </div>
                   <div className="expense-header">
                         <input type="text" id="expenseName" value={expenses.expenseName} onChange={handleChange} placeholder="Enter your expense name" />
                         <input type="number" id="expenseAmount" value={expenses.expenseAmount} placeholder="Enter the amount" onChange={handleChange} />
