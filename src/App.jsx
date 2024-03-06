@@ -2,7 +2,7 @@ import './App.css'
 import Checkboxes from './interviewQuestions/Checkboxes'
 import ExpenseTracker from './interviewQuestions/ExpenseTracker'
 import ImageSlider from './interviewQuestions/ImageSlider'
-import LoadingBar from './interviewQuestions/LoadingBar'
+import ProgressBar from './interviewQuestions/ProgressBar'
 import Todolist from './interviewQuestions/Todolist'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Todolist />
       <ExpenseTracker />
       <ImageSlider />
-      <LoadingBar />
+      <ProgressBar />
     </div>
   )
 }

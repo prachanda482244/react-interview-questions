@@ -25,7 +25,6 @@ const ImageSlider = () => {
       return (
             <div >
                   <h1 className="text-center">Image slider</h1>
-                  <div>{currentImage}</div>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
                         <button onClick={handlePrev}>Prev</button>
                         {

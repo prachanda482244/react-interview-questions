@@ -204,5 +204,5 @@ function outerFunction(outerVariable) {
 }
 
 const innerFunc = outerFunction('outerValue') // when you call the outerFunction then it will invoked but the that anonymous function inside will be pass to the variable innerFunc so when you execute that then the return function value will print
-log(innerFunc)
-    // innerFunc('innerValue');
+    // log(innerFunc)
+innerFunc('innerValue');
