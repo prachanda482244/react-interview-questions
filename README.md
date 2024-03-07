@@ -178,7 +178,7 @@ Semantic HTML elements provide meaning to the structure of a web page, making it
 **Answer:**
 Custom data attributes can be created by prefixing attribute names with `data-`. For example, `<div data-custom="value">` creates a custom data attribute named `data-custom` with the value `value`. Custom data attributes are commonly used to store extra information that is not suitable for other attributes or elements.
 
-- [Advanced CSS Interview Questions](#advanced-css-interview-questions)
+# Advanced CSS Interview Questions
 
 ### Question 31: What is the CSS Box Model?
 
