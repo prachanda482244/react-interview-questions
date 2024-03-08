@@ -8,6 +8,7 @@ This repository contains a comprehensive collection of interview questions for v
 | -------------- | ---------------- |
 | HTML           | 30               |
 | CSS            | 20               |
+| Javascript     | 10               |
 
 ## Description
 
@@ -278,7 +279,7 @@ There are several methods to vertically center an element:
 **Answer:**
 CSS variables, also known as Custom Properties, allow you to define reusable values that can be used throughout your CSS code. They are declared using the `--` prefix and accessed using the `var()` function. For example:
 
-````css
+```css
 :root {
   --primary-color: #007bff;
 }
@@ -286,6 +287,7 @@ CSS variables, also known as Custom Properties, allow you to define reusable val
 .element {
   color: var(--primary-color);
 }
+```
 
 ### Question 46: What is the CSS specificity and how does it work?
 
@@ -295,12 +297,14 @@ CSS specificity determines which CSS rule takes precedence when multiple rules t
 ### Question 47: What is the difference between `display: none` and `visibility: hidden`?
 
 **Answer:**
+
 - `display: none`: Completely removes the element from the document flow, making it invisible and not taking up any space.
 - `visibility: hidden`: Hides the element while still occupying space in the document flow. The element is not visible, but its space is preserved.
 
 ### Question 48: Explain the difference between absolute and relative positioning in CSS.
 
 **Answer:**
+
 - Absolute positioning: Positions the element relative to its nearest positioned ancestor. If no ancestor is positioned, it is placed relative to the initial containing block.
 - Relative positioning: Positions the element relative to its normal position in the document flow, while still occupying space in the document flow. Other elements are positioned as if the element were in its normal position.
 
@@ -308,6 +312,7 @@ CSS specificity determines which CSS rule takes precedence when multiple rules t
 
 **Answer:**
 CSS animations allow you to animate CSS properties over time. You can define animations using `@keyframes` rule and apply them to elements using the `animation` property. For example:
+
 ```css
 @keyframes slide-in {
   from {
@@ -321,12 +326,73 @@ CSS animations allow you to animate CSS properties over time. You can define ani
 .element {
   animation: slide-in 1s forwards;
 }
+```
+
 ### Question 50: What is the purpose of the `z-index` property in CSS?
 
 **Answer:**
 The `z-index` property specifies the stacking order of positioned elements along the z-axis (depth) of the stacking context. Elements with a higher `z-index` value will be displayed in front of elements with a lower `z-index` value.
 
+# Advanced Javascript Interview Questions
+
+### Question 51: What is event delegation in JavaScript?
+
+**Answer:**
+Event delegation is a technique in JavaScript where instead of attaching an event handler to each individual element, you attach it to a parent element. When an event occurs, it bubbles up from the target element to the parent element where the event handler is attached. This allows you to handle events efficiently, especially for dynamically created elements.
+
+### Question 52: Explain the concept of closures in JavaScript.
+
+**Answer:**
+A closure is a combination of a function and the lexical environment within which that function was declared. It allows a function to retain access to variables from its lexical scope even after the scope has closed. This enables powerful programming patterns like data encapsulation, private variables, and the creation of factory functions and modules.
+
+### Question 53: What are promises in JavaScript? How do they work?
+
+**Answer:**
+Promises are objects representing the eventual completion or failure of an asynchronous operation. They are used to handle asynchronous operations in JavaScript, providing a cleaner and more readable syntax compared to callbacks. A promise can be in one of three states: pending, fulfilled, or rejected. Once a promise settles (either fulfilled or rejected), it will not change its state again.
+
+### Question 54: What is the difference between `null` and `undefined` in JavaScript?
+
+**Answer:**
+
+- `null`: Represents the intentional absence of any value. It is a primitive value that indicates a variable has been explicitly set to nothing.
+- `undefined`: Represents an uninitialized, declared variable. It is also a primitive value and is the default value of uninitialized variables.
+
+### Question 55: Explain the concept of prototypal inheritance in JavaScript.
+
+**Answer:**
+Prototypal inheritance is a mechanism in JavaScript where objects inherit properties and methods from other objects. Each object has a prototype object, and when a property or method is accessed on an object, JavaScript first checks if it exists on the object itself. If not, it looks up the prototype chain until it finds the property or method or reaches the end of the chain (with the prototype being `null`).
+
+### Question 56: What are higher-order functions in JavaScript?
+
+**Answer:**
+Higher-order functions are functions that can accept other functions as arguments or return functions as output. They enable powerful programming patterns like function composition, currying, and abstraction over behavior.
+
+### Question 57: What is the event loop in JavaScript?
+
+**Answer:**
+The event loop is a crucial part of JavaScript's concurrency model. It continuously checks the call stack for any tasks that need to be executed. If the call stack is empty, it checks the task queue for any pending asynchronous tasks. If there are tasks in the queue, the event loop will dequeue them and push them onto the call stack for execution.
+
+### Question 58: Explain the difference between `==` and `===` in JavaScript.
+
+**Answer:**
+
+- `==`: The equality operator compares two values after converting them to a common type. It performs type coercion if the operands are of different types.
+- `===`: The strict equality operator compares two values without type conversion. It returns true only if both the value and the type are the same.
+
+### Question 59: What is a closure and how is it used in JavaScript?
+
+**Answer:**
+A closure is a combination of a function and the lexical environment within which that function was declared. It allows a function to retain access to variables from its lexical scope even after the scope has closed. Closures are commonly used for data encapsulation, private variables, and maintaining state in functional programming patterns.
+
+### Question 60: Explain the concept of hoisting in JavaScript.
+
+**Answer:**
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase, before the code execution. This means you can use variables and functions before they are declared in your code. However, only the declarations are hoisted, not the initializations.
+
 ---
 
 This README provides insights into various advanced HTML concepts and can be used as a reference for interview preparation or self-study.
-````
+
+```
+
+```
