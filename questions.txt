@@ -28,7 +28,6 @@ What is the purpose of the hidden attribute in HTML?
 How can you embed SVG (Scalable Vector Graphics) in HTML?
 What are the benefits of using semantic HTML elements?
 How can you create custom data attributes in HTML?
-
 30. What is the purpose of the `z-index` property in CSS?
 31. What is the CSS box model and how does it work?
 32. Explain the difference between `inline`, `block`, `inline-block`, and `flex` display properties.
@@ -60,3 +59,13 @@ How can you create custom data attributes in HTML?
 58. Explain the difference between `==` and `===` in JavaScript.
 59. What is a closure and how is it used in JavaScript?
 60. Explain the concept of hoisting in JavaScript.
+61. What is the difference between `null` and `undefined` in JavaScript?
+62. Explain the concept of prototypal inheritance in JavaScript.
+63. What are higher-order functions in JavaScript?
+64. What is the event loop in JavaScript?
+65. Explain the difference between `==` and `===` in JavaScript.
+66. What is a closure and how is it used in JavaScript?
+67. Explain the concept of hoisting in JavaScript.
+68. What are the benefits of using strict mode in JavaScript?
+69. How does `async`/`await` work in JavaScript?
+70. What are generators in JavaScript and how are they used?

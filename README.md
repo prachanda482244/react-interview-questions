@@ -8,7 +8,7 @@ This repository contains a comprehensive collection of interview questions for v
 | -------------- | ---------------- |
 | HTML           | 30               |
 | CSS            | 20               |
-| Javascript     | 10               |
+| Javascript     | 20               |
 
 ## Description
 
@@ -388,6 +388,60 @@ A closure is a combination of a function and the lexical environment within whic
 
 **Answer:**
 Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase, before the code execution. This means you can use variables and functions before they are declared in your code. However, only the declarations are hoisted, not the initializations.
+
+### Question 61: What is the difference between `null` and `undefined` in JavaScript?
+
+**Answer:**
+
+- `null`: Represents the intentional absence of any value. It is a primitive value that indicates a variable has been explicitly set to nothing.
+- `undefined`: Represents an uninitialized, declared variable. It is also a primitive value and is the default value of uninitialized variables.
+
+### Question 62: Explain the concept of prototypal inheritance in JavaScript.
+
+**Answer:**
+Prototypal inheritance is a mechanism in JavaScript where objects inherit properties and methods from other objects. Each object has a prototype object, and when a property or method is accessed on an object, JavaScript first checks if it exists on the object itself. If not, it looks up the prototype chain until it finds the property or method or reaches the end of the chain (with the prototype being `null`).
+
+### Question 63: What are higher-order functions in JavaScript?
+
+**Answer:**
+Higher-order functions are functions that can accept other functions as arguments or return functions as output. They enable powerful programming patterns like function composition, currying, and abstraction over behavior.
+
+### Question 64: What is the event loop in JavaScript?
+
+**Answer:**
+The event loop is a crucial part of JavaScript's concurrency model. It continuously checks the call stack for any tasks that need to be executed. If the call stack is empty, it checks the task queue for any pending asynchronous tasks. If there are tasks in the queue, the event loop will dequeue them and push them onto the call stack for execution.
+
+### Question 65: Explain the difference between `==` and `===` in JavaScript.
+
+**Answer:**
+
+- `==`: The equality operator compares two values after converting them to a common type. It performs type coercion if the operands are of different types.
+- `===`: The strict equality operator compares two values without type conversion. It returns true only if both the value and the type are the same.
+
+### Question 66: What is a closure and how is it used in JavaScript?
+
+**Answer:**
+A closure is a combination of a function and the lexical environment within which that function was declared. It allows a function to retain access to variables from its lexical scope even after the scope has closed. Closures are commonly used for data encapsulation, private variables, and maintaining state in functional programming patterns.
+
+### Question 67: Explain the concept of hoisting in JavaScript.
+
+**Answer:**
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase, before the code execution. This means you can use variables and functions before they are declared in your code. However, only the declarations are hoisted, not the initializations.
+
+### Question 68: What are the benefits of using strict mode in JavaScript?
+
+**Answer:**
+Strict mode is a feature in JavaScript that helps catch common coding errors and enforce stricter parsing and error handling. Some benefits of using strict mode include preventing accidental global variables, making `this` point to `undefined` in functions invoked without a context, and throwing errors for silent errors.
+
+### Question 69: How does `async`/`await` work in JavaScript?
+
+**Answer:**
+`async`/`await` is a feature in JavaScript that allows asynchronous code to be written in a synchronous style. It is built on top of promises and provides a more intuitive way to work with asynchronous operations. The `async` keyword is used to define an asynchronous function, while the `await` keyword is used to pause the execution of an asynchronous function until a promise is resolved or rejected.
+
+### Question 70: What are generators in JavaScript and how are they used?
+
+**Answer:**
+Generators are special functions in JavaScript that can be paused and resumed at any time. They are defined using the function\* syntax and yield values one at a time using the `yield` keyword. Generators are useful for implementing iteration protocols, asynchronous programming, and lazy evaluation.
 
 ---
 
