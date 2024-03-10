@@ -69,3 +69,14 @@ How can you create custom data attributes in HTML?
 68. What are the benefits of using strict mode in JavaScript?
 69. How does `async`/`await` work in JavaScript?
 70. What are generators in JavaScript and how are they used?
+71. What is the purpose of the `this` keyword in JavaScript?
+72. Explain the concept of event bubbling and event capturing in JavaScript.
+73. What is the difference between `addEventListener()` and `attachEvent()` methods in JavaScript?
+74. What is the `DOMContentLoaded` event in JavaScript?
+75. What are arrow functions in JavaScript? How do they differ from regular functions?
+76. How do you clone an object in JavaScript?
+77. What is a Promise in JavaScript? How do you handle promise chaining and errors?
+78. What is the purpose of the `fetch()` function in JavaScript?
+79. What are modules in JavaScript? How do you export and import modules?
+80. How do you handle asynchronous code in JavaScript?
+

@@ -8,7 +8,7 @@ This repository contains a comprehensive collection of interview questions for v
 | -------------- | ---------------- |
 | HTML           | 30               |
 | CSS            | 20               |
-| Javascript     | 20               |
+| Javascript     | 30               |
 
 ## Description
 
@@ -442,6 +442,66 @@ Strict mode is a feature in JavaScript that helps catch common coding errors and
 
 **Answer:**
 Generators are special functions in JavaScript that can be paused and resumed at any time. They are defined using the function\* syntax and yield values one at a time using the `yield` keyword. Generators are useful for implementing iteration protocols, asynchronous programming, and lazy evaluation.
+
+### Question 71: What is the purpose of the `this` keyword in JavaScript?
+
+**Answer:**
+The `this` keyword in JavaScript refers to the object that is currently executing the code. Its value is determined by how a function is called, and it can have different values depending on the context in which it is used. In global scope, `this` refers to the global object (window in browsers). In a function called as a method of an object, `this` refers to the object itself. In an event handler, `this` usually refers to the element that triggered the event.
+
+### Question 72: Explain the concept of event bubbling and event capturing in JavaScript.
+
+**Answer:**
+Event bubbling and event capturing are two mechanisms for handling events in the DOM.
+
+- **Event bubbling**: In event bubbling, when an event is triggered on an element, it first runs the event handlers on the innermost element and then bubbles up to run event handlers on its parent elements.
+- **Event capturing**: In event capturing, when an event is triggered on an element, it runs event handlers on the outermost element first and then works its way down to the innermost element.
+
+### Question 73: What is the difference between `addEventListener()` and `attachEvent()` methods in JavaScript?
+
+**Answer:**
+
+- `addEventListener()`: This is a method used to attach an event handler to an element. It allows attaching multiple event handlers to the same element and supports event delegation. It is the preferred method for adding event listeners in modern browsers.
+- `attachEvent()`: This method was used in older versions of Internet Explorer to attach event handlers to elements. It only allows attaching one event handler per element and does not support event delegation. It is deprecated and not recommended for use in modern web development.
+
+### Question 74: What is the `DOMContentLoaded` event in JavaScript?
+
+**Answer:**
+The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. This event is useful for executing JavaScript code that needs to run as soon as the DOM is ready but before the `load` event occurs.
+
+### Question 75: What are arrow functions in JavaScript? How do they differ from regular functions?
+
+**Answer:**
+Arrow functions are a more concise way to write functions in JavaScript introduced in ECMAScript 6 (ES6). They have a more compact syntax and lexically bind the `this` value, meaning they inherit `this` from the surrounding code. Arrow functions do not have their own `this`, `arguments`, `super`, or `new.target` bindings. Additionally, arrow functions cannot be used as constructors and do not have a `prototype` property.
+
+### Question 76: How do you clone an object in JavaScript?
+
+**Answer:**
+There are several ways to clone an object in JavaScript:
+
+- Using the spread operator (`...`): `const clone = { ...original };`
+- Using `Object.assign()`: `const clone = Object.assign({}, original);`
+- Using `JSON.parse()` and `JSON.stringify()`: `const clone = JSON.parse(JSON.stringify(original));`
+- Using `Object.create()`: `const clone = Object.create(Object.getPrototypeOf(original), Object.getOwnPropertyDescriptors(original));`
+
+### Question 77: What is a Promise in JavaScript? How do you handle promise chaining and errors?
+
+**Answer:**
+A Promise in JavaScript represents the eventual completion or failure of an asynchronous operation and its resulting value. Promises are used for handling asynchronous operations in a more manageable and scalable way. Promise chaining allows you to execute multiple asynchronous operations sequentially. Errors in promises can be handled using the `.catch()` method to catch any errors that occur during the promise chain.
+
+### Question 78: What is the purpose of the `fetch()` function in JavaScript?
+
+**Answer:**
+The `fetch()` function is used to make network requests to fetch resources from the network. It is a modern replacement for XMLHttpRequest (XHR) and provides a simpler and more flexible interface for making HTTP requests. The `fetch()` function returns a Promise that resolves to the Response object representing the response to the request.
+
+### Question 79: What are modules in JavaScript? How do you export and import modules?
+
+**Answer:**
+Modules in JavaScript are reusable pieces of code that encapsulate functionality and can be imported into other scripts. Modules allow you to organize code into separate files, making it easier to manage and maintain large applications. You can export variables, functions, and classes from a module using the `export` keyword and import them into another module using the `import` keyword.
+
+### Question 80: How do you handle asynchronous code in JavaScript?
+
+**Answer:**
+Asynchronous code in JavaScript can be handled using callbacks, Promises, async/await, and event listeners. Callbacks are functions passed as arguments to other functions and executed later when an asynchronous operation completes. Promises provide a cleaner and more manageable way to work with asynchronous code and handle asynchronous operations sequentially or concurrently. Async/await is a modern feature in JavaScript that allows you to write asynchronous code in a synchronous style, making it easier to read and understand. Event listeners are used to handle asynchronous events such as user input, network requests, and timers.
 
 ---
 
