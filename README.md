@@ -9,6 +9,7 @@ This repository contains a comprehensive collection of interview questions for v
 | HTML           | 30               |
 | CSS            | 20               |
 | Javascript     | 30               |
+| React          | 10               |
 
 ## Description
 
@@ -503,9 +504,75 @@ Modules in JavaScript are reusable pieces of code that encapsulate functionality
 **Answer:**
 Asynchronous code in JavaScript can be handled using callbacks, Promises, async/await, and event listeners. Callbacks are functions passed as arguments to other functions and executed later when an asynchronous operation completes. Promises provide a cleaner and more manageable way to work with asynchronous code and handle asynchronous operations sequentially or concurrently. Async/await is a modern feature in JavaScript that allows you to write asynchronous code in a synchronous style, making it easier to read and understand. Event listeners are used to handle asynchronous events such as user input, network requests, and timers.
 
+# React Interview Questions
+
+### Question 81: What are React hooks? How do they differ from class components?
+
+**Answer:**
+React hooks are functions that let you use state and other React features in functional components. They were introduced in React 16.8 as a way to use state and lifecycle methods in functional components without writing a class. Hooks provide a more concise and readable way to manage component state and side effects compared to class components.
+
+### Question 82: Explain the purpose of the `useState` hook in React.
+
+**Answer:**
+The `useState` hook is used to add state to functional components in React. It returns a stateful value and a function to update that value. The initial state can be passed as an argument to the `useState` hook, and subsequent updates to the state can be made using the update function returned by the hook.
+
+### Question 83: What is the `useEffect` hook in React and how is it used?
+
+**Answer:**
+The `useEffect` hook is used to perform side effects in functional components in React. It allows you to perform tasks such as data fetching, subscriptions, or manually changing the DOM after the component has rendered. The `useEffect` hook takes a function as its first argument, which will be executed after every render. You can also specify dependencies to control when the effect runs.
+
+### Question 84: What are controlled and uncontrolled components in React?
+
+**Answer:**
+
+- Controlled components: Components whose state is controlled by React. Their value is controlled by React state, and updates to the input value are handled by event handlers.
+- Uncontrolled components: Components whose state is managed by the DOM itself. Their value is controlled by the DOM, and updates to the input value are not managed by React state.
+
+### Question 85: What is the purpose of React context?
+
+**Answer:**
+React context is used to share data between components without having to explicitly pass props through every level of the component tree. It provides a way to pass data through the component tree without having to pass props down manually at every level. Context is particularly useful for global data such as user authentication, theme, or language preferences.
+
+### Question 86: Explain the concept of React portals.
+
+**Answer:**
+React portals provide a way to render children into a DOM node that exists outside of the normal DOM hierarchy of the parent component. Portals are useful for scenarios such as modals, tooltips, or other UI elements that need to be rendered outside of the normal DOM flow.
+
+### Question 87: What are the differences between shallow rendering and full rendering in React testing?
+
+**Answer:**
+
+- Shallow rendering: Shallow rendering renders only the top-level component without rendering its children. It is useful for isolating the component being tested and focusing on its behavior without worrying about the behavior of its children.
+- Full rendering: Full rendering renders the entire component tree, including all of its children. It is useful for testing the behavior of the component and its children together.
+
+### Question 88: What is the purpose of React.memo()?
+
+**Answer:**
+React.memo() is a higher-order component (HOC) that memoizes the result of a component rendering. It is similar to React.PureComponent for class components. React.memo() improves performance by preventing unnecessary re-renders of functional components when their props have not changed.
+
+### Question 89: How do you optimize performance in React applications?
+
+**Answer:**
+Performance optimization in React applications can be achieved using techniques such as:
+
+- Memoization: Memoizing expensive computations or data fetching results to prevent unnecessary re-computation.
+- Code splitting: Splitting the application code into smaller chunks and loading them asynchronously to reduce initial load time.
+- Virtualization: Using techniques like windowing or pagination to render only the elements that are currently visible on the screen.
+- Optimizing renders: Avoiding unnecessary re-renders by using PureComponent, memoization, or shouldComponentUpdate in class components.
+
+### Question 90: What are React hooks rules and best practices?
+
+**Answer:**
+Some rules and best practices for using React hooks include:
+
+- Only call hooks at the top level of functional components or custom hooks.
+- Only call hooks from React function components or custom hooks, not regular JavaScript functions.
+- Name custom hooks with the prefix "use" to indicate that they are hooks.
+- Keep hooks simple and focused on a single concern to make them reusable and easier to understand.
+
 ---
 
-This README provides insights into various advanced HTML concepts and can be used as a reference for interview preparation or self-study.
+This README provides insights into various advanced HTML,CSS,JS,REACT concepts and can be used as a reference for interview preparation or self-study.
 
 ```
 

@@ -79,4 +79,14 @@ How can you create custom data attributes in HTML?
 78. What is the purpose of the `fetch()` function in JavaScript?
 79. What are modules in JavaScript? How do you export and import modules?
 80. How do you handle asynchronous code in JavaScript?
+81. What are React hooks? How do they differ from class components?
+82. Explain the purpose of the `useState` hook in React.
+83. What is the `useEffect` hook in React and how is it used?
+84. What are controlled and uncontrolled components in React?
+85. What is the purpose of React context?
+86. Explain the concept of React portals.
+87. What are the differences between shallow rendering and full rendering in React testing?
+88. What is the purpose of React.memo()?
+89. How do you optimize performance in React applications?
+90. What are React hooks rules and best practices?
 
