@@ -89,4 +89,14 @@ How can you create custom data attributes in HTML?
 88. What is the purpose of React.memo()?
 89. How do you optimize performance in React applications?
 90. What are React hooks rules and best practices?
+91. What is the purpose of the `useReducer` hook in React?
+92. Explain the concept of code splitting in React applications.
+93. What are React error boundaries?
+94. How do you handle routing in React applications?
+95. What is server-side rendering (SSR) in React? How does it differ from client-side rendering?
+96. Explain the concept of lazy loading in React.
+97. What are React context providers and consumers?
+98. How do you handle forms with validation in React?
+99. What are React fragments?
+100. How do you test React components?
 

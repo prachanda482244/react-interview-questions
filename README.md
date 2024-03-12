@@ -570,6 +570,56 @@ Some rules and best practices for using React hooks include:
 - Name custom hooks with the prefix "use" to indicate that they are hooks.
 - Keep hooks simple and focused on a single concern to make them reusable and easier to understand.
 
+### Question 91: What is the purpose of the `useReducer` hook in React?
+
+**Answer:**
+The `useReducer` hook is used to manage complex state logic in React components. It is an alternative to `useState` that allows you to update state based on the previous state and action objects. `useReducer` is useful for managing state that involves multiple sub-values or when the next state depends on the previous one.
+
+### Question 92: Explain the concept of code splitting in React applications.
+
+**Answer:**
+Code splitting is a technique used to improve the performance and loading time of React applications by splitting the bundle into smaller chunks. With code splitting, you can dynamically load only the necessary JavaScript code for the current route or component, reducing the initial bundle size and improving load times.
+
+### Question 93: What are React error boundaries?
+
+**Answer:**
+React error boundaries are components that catch JavaScript errors anywhere in their child component tree and display a fallback UI instead of crashing the entire application. Error boundaries are used to gracefully handle errors and prevent them from propagating up to higher-level components.
+
+### Question 94: How do you handle routing in React applications?
+
+**Answer:**
+Routing in React applications can be handled using libraries like React Router. React Router provides a declarative way to define routing in your application, allowing you to map URL paths to specific components and manage navigation between different views in a single-page application.
+
+### Question 95: What is server-side rendering (SSR) in React? How does it differ from client-side rendering?
+
+**Answer:**
+Server-side rendering (SSR) is the process of rendering React components on the server and sending the generated HTML to the client, where it is hydrated into a fully interactive application. SSR improves performance and SEO by delivering fully rendered pages to the client, whereas client-side rendering (CSR) renders components in the browser using JavaScript after the initial HTML has been loaded.
+
+### Question 96: Explain the concept of lazy loading in React.
+
+**Answer:**
+Lazy loading is a technique used to defer the loading of non-essential resources until they are needed. In React, lazy loading is commonly used with React Suspense and React.lazy to dynamically import components or data only when they are required, reducing the initial bundle size and improving performance.
+
+### Question 97: What are React context providers and consumers?
+
+**Answer:**
+React context providers and consumers are components used to share data between components without having to pass props manually through every level of the component tree. Context providers wrap a part of the component tree and provide a value that can be accessed by any nested consumer component.
+
+### Question 98: How do you handle forms with validation in React?
+
+**Answer:**
+Forms with validation in React can be handled by using controlled components and libraries like Formik or Yup. Controlled components allow you to manage form state and validation logic using React state, while libraries like Formik provide a simpler and more declarative way to handle form validation, submission, and error handling.
+
+### Question 99: What are React fragments?
+
+**Answer:**
+React fragments are a lightweight syntax for grouping multiple elements without adding extra nodes to the DOM. Fragments allow you to return multiple elements from a component's render method without wrapping them in a container div or other element, improving code readability and reducing unnecessary DOM nodes.
+
+### Question 100: How do you test React components?
+
+**Answer:**
+React components can be tested using tools like Jest and React Testing Library. Jest is a JavaScript testing framework that provides utilities for testing React components, while React Testing Library is a testing utility specifically designed for testing React components in a way that simulates user interactions and ensures that the components behave as expected.
+
 ---
 
 This README provides insights into various advanced HTML,CSS,JS,REACT concepts and can be used as a reference for interview preparation or self-study.
