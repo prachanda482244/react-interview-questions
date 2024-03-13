@@ -9,7 +9,7 @@ This repository contains a comprehensive collection of interview questions for v
 | HTML           | 30               |
 | CSS            | 20               |
 | Javascript     | 30               |
-| React          | 10               |
+| React          | 20               |
 
 ## Description
 
